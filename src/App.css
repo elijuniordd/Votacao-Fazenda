@@ -1,0 +1,85 @@
+.grade-roca {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.grade-peoes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 1rem;
+}
+
+.card,
+.placar {
+  position: relative;
+  background: var(--papel);
+  color: var(--tinta);
+  border-radius: 4px;
+  padding: 0.8rem;
+  border: 4px solid var(--madeira-clara);
+  box-shadow: 0 6px 0 var(--madeira-escura);
+}
+
+.card-foto,
+.placar img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+.card h3,
+.placar h3 {
+  font-size: 1.2rem;
+  margin: 0.7rem 0;
+}
+
+.selo-roca {
+  position: absolute;
+  top: 1.2rem;
+  left: 1.2rem;
+  background: var(--palha);
+  color: var(--tinta);
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  font-weight: 800;
+  font-size: 0.85rem;
+}
+
+.card button,
+.resultado button {
+  width: 100%;
+  border: 0;
+  border-radius: 999px;
+  padding: 0.7rem;
+  background: var(--pasto);
+  color: #fff;
+  font: 800 1rem var(--fonte-texto);
+  cursor: pointer;
+}
+
+.confirmacao {
+  margin: 1.5rem 0 0;
+  padding: 1rem 1.2rem;
+  background: var(--papel);
+  color: var(--tinta);
+  border-left: 8px solid var(--pasto);
+  border-radius: 4px;
+  font-weight: 700;
+}
+
+.barra {
+  background: rgba(0, 0, 0, 0.2);
+  height: 16px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.barra-preenchida {
+  background: var(--pasto);
+  height: 100%;
+  transition: width 0.6s ease;
+}
+
+
